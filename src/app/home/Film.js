@@ -30,7 +30,7 @@ export default function VideoSection() {
         const video = videoRef.current;
         if (!video) return;
 
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.7) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
           video.play();
           setIsPlaying(true);
         } else {
@@ -60,7 +60,7 @@ export default function VideoSection() {
     <section className=" text-center py-12 px-4">
         <h2 className="mb-4 text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Lokalizacja inwestycji</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Osiedle domów bliźniaczych zlokalizowane w spokojnej części Trzebowniska – 
+            Osiedle domów bliźniaczych zlokalizowane w spokojnej części Trzebowniska <b>TUTAJ ADRES</b> – 
             blisko natury, ale z szybkim dojazdem do centrum Rzeszowa. Idealne miejsce dla rodzin.
         </p>
     </section>

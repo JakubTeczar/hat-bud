@@ -10,35 +10,35 @@ export default function Brands() {
               src="./imgs/brands/brand1.png"
               width={158}
               height={48}
-              className="grayscale col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+              className="hover:scale-110 transition-all  grayscale col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
             />
             <img
               alt="Reform"
               src="./imgs/brands/brand2.png"
               width={158}
               height={48}
-              className="grayscale col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+              className="hover:scale-110 transition-all   grayscale col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
             />
             <img
               alt="Tuple"
               src="./imgs/brands/brand3.png"
               width={158}
               height={48}
-              className="grayscale col-span-2 py-1 max-h-10 w-full object-contain object-left lg:col-span-1"
+              className="hover:scale-110 transition-all   grayscale col-span-2 py-1 max-h-10 w-full object-contain object-left lg:col-span-1"
             />
             <img
               alt="SavvyCal"
               src="./imgs/brands/brand6.png"
               width={158}
               height={48}
-              className="grayscale pr-2 col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+              className="hover:scale-110 transition-all   grayscale pr-2 col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
             />
             <img
               alt="Statamic"
               src="./imgs/brands/brand5.png"
               width={158}
               height={48}
-              className="grayscale col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
+              className="hover:scale-110 transition-all grayscale col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"
             />
           </div>
         </div>

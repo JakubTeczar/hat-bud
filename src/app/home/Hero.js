@@ -17,19 +17,19 @@ export default function Hero() {
               </div>
             </div>
             <h1 className="mt-24 text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:mt-10 sm:text-7xl">
-              Domy bliźniacze w Trzebownisku
+              Domy bliźniacze – Trzebownisko
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
               Realizujemy komfortowe domy dwulokalowe – solidnie, terminowo i z dbałością o szczegóły. Wybierz pewnego wykonawcę dla Twojej inwestycji.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <a
-                href="#"
+                href="#kontakt"
                 className="rounded-md bg-[#333333] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#333333]"
               >
                 Złóż zapytanie
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+              <a href="#informacje_o_projekcie" className="text-sm/6 font-semibold text-gray-900">
                 Poznaj ofertę <span aria-hidden="true">→</span>
               </a>
             </div>

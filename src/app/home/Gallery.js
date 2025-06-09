@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
@@ -17,12 +17,28 @@ import 'swiper/css/navigation';
 const Gallery = ({ images }) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+    const swiperRef = useRef(null);
+    useEffect(() => {
+    if (
+      swiperRef.current &&
+      swiperRef.current.params &&
+      prevRef.current &&
+      nextRef.current
+    ) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.destroy(); // w razie czego wyczyść poprzednie
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, []);
 
   return (
     <div className="bg-white py-10" id="wizualizacje">
         <h2 className=' text-3xl text-center mx-auto max-w-7xl mb-5 font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl'>Wizualizacje architektoniczne inwestycji</h2>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[EffectCoverflow, Pagination, Navigation]}
           effect="coverflow"
           grabCursor={true}
@@ -40,12 +56,6 @@ const Gallery = ({ images }) => {
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
-          }}
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
           }}
         >
           {images.map((src, index) => (

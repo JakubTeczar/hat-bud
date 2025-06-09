@@ -1,27 +1,45 @@
 const faqs = [
-  {
+   {
     id: 1,
-    question: "Czy są dodatkowe koszty?",
+    question: "Dane na temat inwestycji",
     answer:
-      "Wszystko, co zawieramy w umowie jest wliczone w koszt budowy. Doprowadzamy budowę do stanu deweloperskiego. Dodatkowe koszty mogą obejmować:  uzyskanie pozwolenia na budowę, przygotowanie terenu pod budowę, podłączenie do mediów, wykończenie wnętrza. ",
+      "Informacja.",
   },
-    {
+  {
     id: 2,
-    question: "Jak wygląda kwestia przyłączeń i mediów?",
+    question: "Prezentacja projektu",
     answer:
-      "Wszystkie domy mają wykonane przyłącza do sieci wodociągowej, kanalizacyjnej, gazowej oraz energetycznej. Dodatkowo przygotowana jest infrastruktura pod Internet światłowodowy.",
+      "Przedstawimy wizualizacje, rzuty domów oraz pełny opis standardu wykończenia i harmonogram realizacji.",
   },
-    {
+  {
     id: 3,
-    question: "Czy inwestycja posiada drogę dojazdową i miejsca parkingowe?",
+    question: "Rezerwacja segmentu",
     answer:
-      "Tak, droga wewnętrzna jest utwardzona i oświetlona, a do każdego domu przynależą dwa miejsca parkingowe – w tym możliwość budowy wiaty lub garażu",
+      "Wybierz interesujący Cię segment i podpisz umowę rezerwacyjną. Zabezpieczysz tym samym swoją lokalizację.",
   },
-    {
+  {
     id: 4,
-    question: "Jakie są miesięczne koszty utrzymania domu?",
+    question: "Ustalenie finansowania",
     answer:
-      "Dzięki nowoczesnym technologiom, takim jak ocieplenie pianą PUR i energooszczędne okna, miesięczne koszty ogrzewania są bardzo niskie – średnio 200–300 zł zimą przy standardowym użytkowaniu.",
+      "W razie potrzeby skontaktujemy Cię z doradcą kredytowym, który pomoże w uzyskaniu finansowania.",
+  },
+  {
+    id: 5,
+    question: "Podpisanie umowy deweloperskiej",
+    answer:
+      "Po skompletowaniu dokumentów podpisujemy umowę deweloperską w formie aktu notarialnego.",
+  },
+  {
+    id: 6,
+    question: "Realizacja budowy",
+    answer:
+      "Na bieżąco informujemy o postępach prac. Inwestycja zostanie zrealizowana zgodnie z harmonogramem.",
+  },
+  {
+    id: 7,
+    question: "Odbiór i przekazanie domu",
+    answer:
+      "Po zakończeniu budowy przeprowadzamy odbiór techniczny i przekazujemy klucze do Twojego nowego domu.",
   },
   // More questions...
 ]
@@ -34,7 +52,7 @@ export default function Faq() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Często zadawne pytania</h2>
+        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Informacje szczegółowe</h2>
         <dl className="mt-20 divide-y divide-gray-900/10">
           {faqs.map((faq) => (
             <div key={faq.id} className="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">

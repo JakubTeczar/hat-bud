@@ -31,7 +31,7 @@ export default function Fature() {
                 Dlaczego warto wybrać Hat-Bud?
               </p>
               <p className="mt-6 text-lg/8 text-gray-600">
-               W Hat-Bud stawiamy na solidne wykonanie, nowoczesne rozwiązania i terminowość. Tworzymy domy, które zachwycają estetyką i są funkcjonalne na co dzień – od projektu aż po wykończenie.
+               <b>Ponad 25 lat doświadczenia</b> sprawia, że w Hat-Bud doskonale wiemy, jak budować solidnie i z wyczuciem stylu. Od projektu po wykończenie – tworzymy domy, które łączą estetykę z funkcjonalnością.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                 {featuresData.map((feature) => (

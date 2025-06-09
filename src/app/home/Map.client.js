@@ -13,6 +13,7 @@ const customIcon = L.icon({
   popupAnchor: [0, -40], // Pozycja popupu względem ikony
 });
 
+
 export default function MapSection() {
   return (
     <MapContainer

@@ -23,7 +23,7 @@ export default function MapSection() {
     >
       <TileLayer
         attribution='© <a href="https://www.maptiler.com/">MapTiler</a> | © OpenStreetMap contributors'
-        url="https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=A0GQtwbYB0cPn2fb0LgU"
+        url="https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=ry0kolzuW6KQR6ScpsPY"
       />
 
       <Marker

@@ -229,7 +229,7 @@ export default function Options() {
             {tiers.map((tier) => (
               <Tab
                 key={tier.name}
-                className="w-1/3 border-b border-gray-100 py-4 text-base/8 font-medium text-indigo-600 data-selected:border-indigo-600 [&:not([data-focus])]:focus:outline-hidden"
+                className="w-1/3 border-b border-gray-100 py-4 text-base/8 font-medium text-[#BEA67D] data-selected:border-[#BEA67D] [&:not([data-focus])]:focus:outline-hidden"
               >
                 {tier.name}
               </Tab>
@@ -242,7 +242,7 @@ export default function Options() {
                   href={tier.href}
                   className="mt-8 block rounded-md bg-white px-3.5 py-2.5 text-center text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50"
                 >
-                  Get started
+                  Złóż zapytanie
                 </a>
                 {sections.map((section) => (
                   <Fragment key={section.name}>
